@@ -209,20 +209,20 @@
       <div>
         <div class="kicker rv">Notre projet phare</div>
         <h2 class="rv d1">Le hackathon IA<em>sur trois campus.</em></h2>
-        <p class="rv d2">Une journée pour résoudre un cas réel posé par une entreprise, avec l'IA, en équipe. Organisé par CS Network en simultané à Rennes, Metz et Paris-Saclay.</p>
+        <p class="rv d2">Une journée pour résoudre des cas réels posés par des entreprises, avec l'IA, en équipe. Organisé par CS Network en simultané à Rennes, Metz et Paris-Saclay.</p>
         <div class="countdown rv d3" id="countdown" hidden><b id="days">0</b><span>jours avant les demi-finales</span></div>
       </div>
       <div class="hk-visual rv d2"><img class="photo" src="img/hk-visual.jpg" alt="Affiche du hackathon CentraleSupélec Network, 9 et 16 janvier" loading="lazy"></div>
     </div>
     <div class="hk-dates">
-      <div class="hk-date rv"><div class="n">9 janvier 2027</div><p>Demi-finales en simultané sur les trois campus, de 10 h à 19 h.</p></div>
+      <div class="hk-date rv"><div class="n">9 janvier 2027</div><p>Demi-finales en simultané sur les trois campus, de 8 h à 21 h.</p></div>
       <div class="hk-date rv d1"><div class="n">16 janvier 2027</div><p>Finale et remise des prix à Paris, à la Maison CentraleSupélec.</p></div>
     </div>
     <div class="figs">
-      <div class="fig rv"><div class="n">200 à 300</div><div class="l">participants visés</div></div>
+      <div class="fig rv"><div class="n">300</div><div class="l">participants</div></div>
       <div class="fig rv d1"><div class="n">3</div><div class="l">campus en simultané</div></div>
       <div class="fig rv d2"><div class="n">4 à 5</div><div class="l">étudiants par équipe</div></div>
-      <div class="fig rv d3"><div class="n">1</div><div class="l">cas réel par entreprise partenaire</div></div>
+      <div class="fig rv d3"><div class="n">3</div><div class="l">cas d'usage en tout</div></div>
     </div>
     <div class="roles">
       <div class="role rv"><div class="i">Entreprises</div><h3>Poser un cas</h3><p>Une question réelle de votre entreprise, traitée par les équipes pendant la journée.</p></div>
@@ -504,7 +504,7 @@
   document.querySelectorAll('[data-count]').forEach(el => count.observe(el));
 
   // Compte à rebours du hackathon
-  const days = Math.ceil((new Date('2027-01-09T10:00:00+01:00') - Date.now()) / 864e5);
+  const days = Math.ceil((new Date('2027-01-09T08:00:00+01:00') - Date.now()) / 864e5);
   if (days > 0) {
     document.getElementById('days').textContent = days;
     document.getElementById('countdown').hidden = false;
